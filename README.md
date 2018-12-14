@@ -1,24 +1,42 @@
-# Muse UI
-![](https://api.travis-ci.org/museui/muse-ui.svg?branch=master)
-[![npm package](https://img.shields.io/npm/v/muse-ui.svg)](https://www.npmjs.org/package/muse-ui)
-[![NPM downloads](http://img.shields.io/npm/dm/muse-ui.svg)](https://npmjs.org/package/muse-ui)
-[![Join the chat at https://gitter.im/muse-ui/muse-ui](https://badges.gitter.im/muse-ui/muse-ui.svg)](https://gitter.im/muse-ui/muse-ui?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Material Design UI library for Vuejs 2.0
+<p align="center">
+  <a href="https://muse-ui.org" target="_blank">
+    <img width="120" src="./demo/icon_logo.png">
+  </a>
+</p>
 
-## Links
+<h1 align="center">Muse-UI</h1>
 
-* [Home Page](http://www.muse-ui.org/)
-* [中文文档](http://www.muse-ui.org/#/install)
-* [English Docs](http://www.muse-ui.org/?lang=en)
+<p align="center">
+  <a href="https://material.io/">Material Design</a>
+  UI library for <a href="https://vuejs.org/">Vuejs 2.0</a>
+</p>
 
-## Install
+<p align="center">
+  <a href="https://travis-ci.org/museui/muse-ui">
+    <img src="https://img.shields.io/travis/museui/muse-ui.svg" alt="travis ci badge">
+  </a>
+  <a href="https://www.npmjs.org/package/muse-ui">
+    <img src="https://img.shields.io/npm/v/muse-ui.svg" alt="Downloads">
+  </a>
+  <a href="https://npmjs.org/package/muse-ui">
+    <img src="https://img.shields.io/npm/dm/muse-ui.svg" alt="Downloads">
+  </a>
+  <a href="https://gitter.im/muse-ui/muse-ui?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge">
+    <img src="https://badges.gitter.im/muse-ui/muse-ui.svg" alt="Downloads">
+  </a>
+</p>
+
+## Installation
+
+Muse-UI is available as an [npm package](https://www.npmjs.com/package/muse-ui)
 
 ```bash
-npm install muse-ui -save
+npm install muse-ui -S
+yarn add muse-ui
 ```
 
-## Get Started
+## Usage
 
 ```javascript
 import Vue from 'vue'
@@ -27,87 +45,29 @@ import 'muse-ui/dist/muse-ui.css'
 Vue.use(MuseUI)
 ```
 
-or
-
-**webpack.conf.js** webpack1
-
-```javascript
-{
-  // ...
-  module: {
-    loaders: [
-      // ...
-      {
-        test: /muse-ui.src.*?js$/,
-        loader: 'babel'
-      }
-    ]
-  },
-  resolve: {
-    // ...
-    alias: {
-      'muse-components': 'muse-ui/src'
-    }
-  }
-}
-```
-
-webpack2
-
-```javascript
-{
-  // ...
-  rules: {
-    loaders: [
-      // ...
-      {
-        test: /muse-ui.src.*?js$/,
-        loader: 'babel-loader'
-      }
-    ]
-  },
-  resolve: {
-    // ...
-    alias: {
-      'muse-components': 'muse-ui/src'
-    }
-  }
-}
-```
-
-**main.js**
-
-```javascript
-import Vue from 'vue'
-import 'muse-components/styles/base.less' // 加载基础的样式
-import appBar from 'muse-components/appBar'
-import avatar from 'muse-components/avatar'
-// ..
-Vue.component(appBar.name, appBar)
-Vue.component(avatar.name, avatar)
-```
-
+For more information, please refer to [Usage](https://muse-ui.org/#/zh-CN/usage) in our documentation.
 
 ## Browser Support
 
-* IE 10+
-* Andorid 4.4+
-* IOS 7+
+Modern browsers and Internet Explorer 10+.
+
+## Contributing
+
+Please make sure to read the contributing guide ([中文](https://muse-ui.org/#/zh-CN/contributing) | [English](https://muse-ui.org/#/en-US/contributing)) before making a pull request.
 
 ## Changelog
 
-Detailed changes for each release are documented in the [release notes](https://museui.github.io/#/changeLog).
+Detailed changes for each release are documented in the [release notes](https://muse-ui.org/#/zh-CN/changelog).
 
-## Contribution
+## Documentation
 
-Please make sure to read the [Contributing Guide](https://museui.github.io/#/contributing) before making a pull request.
+Check out our [documentation website](https://muse-ui.org).
 
-## Dependencies
+## Supporting Muse-UI
 
-* [vuejs 2.0](https://vuejs.org/)
-* [keycode](https://github.com/timoxley/keycode)
-* [material icons](https://fonts.googleapis.com/icon?family=Material+Icons)
-* [material design](https://material.google.com)
+If you find Muse-UI useful, you can buy us a cup of coffee
+
+[支持 Muse-UI](https://muse-ui.org/#/zh-CN/support)
 
 ## Licence
 

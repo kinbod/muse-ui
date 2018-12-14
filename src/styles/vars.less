@@ -2,14 +2,13 @@
 @fontFamily: Roboto, Lato, sans-serif;
 
 // primary and accent
-@primaryColor: @deepPurple400;  // 主色
-@darkerPrimaryColor: @deepPurple600;
-// @primaryColor: @deepPurple400;  // 主色
-// @darkerPrimaryColor: @deepPurple600;
-@lighterPrimaryColor: @grey400;
-@accentColor: @pinkA200;
-@darkerAccentColor: @grey100;
-@lighterAccentColor: @grey500;
+@primaryColor: @blue;  // 主色
+@secondaryColor: @pinkA200;
+@successColor: @green;
+@warningColor: @yellow600;
+@errorColor: @red;
+@infoColor: @blue;
+@trackColor: @grey400;
 
 // textColor or borderColor
 @textColor: @darkBlack;
@@ -19,11 +18,9 @@
 @disabledColor: fade(@fullBlack, 38%);
 
 // background
-@backgroundColor: @white;
-@statusBarBackgroundColor: @grey300;
-@appbarBackgroundColor: @grey100;
+@backgroundColor: @grey50;
 @dialogBackgroundColor: @white; // dialogs or cards
-
+@chipBackgroundColor: @grey300;
 // icon color
 @activeIconColor: fade(@fullBlack, 54%);
 @inActiveIconColor: fade(@fullBlack, 38%);
@@ -44,3 +41,4 @@
 // animate
 @easeOutFunction: cubic-bezier(0.23, 1, 0.32, 1);
 @easeInOutFunction: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+

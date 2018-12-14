@@ -1,4 +1,4 @@
-@import "./normalize.css";
+@import "./normalize.less";
 @import "./vars.less";
 *,
 *:before,
@@ -20,11 +20,6 @@ body{
   color: @textColor;
 }
 
-body,html{
-  overflow-x:hidden;
-  overflow-y: auto;
-}
-
 pre{
   white-space: pre-wrap;
   word-break: break-all;
@@ -33,7 +28,7 @@ pre{
 
 a{
   text-decoration: none;
-  color: @accentColor;
+  color: @secondaryColor;
   user-select: none;
   -webkit-user-select: none;
 }
